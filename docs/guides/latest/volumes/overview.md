@@ -4,7 +4,7 @@ description: An overview on how stand-alone volume backup works in Stash.
 menu:
   product_stash_0.8.3:
     identifier: volume-backup-overview
-    name: What is Default Backup?
+    name: How does it work?
     parent: volume-backup
     weight: 10
 product_name: stash
