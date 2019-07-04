@@ -4,7 +4,7 @@ description: A step by step guide on how to backup a stand-alone PVC using Stash
 menu:
   product_stash_0.8.3:
     identifier: volume-backup-pvc
-    name: Backup & Restore a PVC?
+    name: Backup & Restore a Stand-alone PVC
     parent: volume-backup
     weight: 20
 product_name: stash
