@@ -122,7 +122,7 @@ spec:
       app: nfs-demo
 ```
 
-Notice the `spec.accessModes` section. We are using `ReadWriteMany` access mode so that multiple pod can use this PVC simultaneously. Without this access mode, Stash will fail to backup the volume if any other pod mount it during backup.
+Notice the `spec.accessModes` section. We are using `ReadWriteMany` access mode so that multiple pods can use this PVC simultaneously. Without this access mode, Stash will fail to backup the volume if any other pod mount it during backup.
 
 Also, notice the `spec.selector` section. We have specified `app: nfs-demo` labels as a selector so that it binds with the PV that we have created earlier.
 
@@ -141,7 +141,7 @@ NAME      STATUS   VOLUME   CAPACITY   ACCESS MODES   STORAGECLASS   AGE
 nfs-pvc   Bound    nfs-pv   1Gi        RWX                           32s
 ```
 
-Here, we can see that the PVC `nfs-pvc` has been bounded with PV `nvs-pv`.
+Here, we can see that the PVC `nfs-pvc` has been bounded with PV `nfs-pv`.
 
 **Deploy Workload:**
 
